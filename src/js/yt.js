@@ -131,5 +131,5 @@ if(cid){
   // Make sure the client is loaded and sign-in is complete before calling this method.
 
   gapi.load("client:auth2", function() {
-    gapi.auth2.init({client_id: "1019178509762-lvrv63kou937okpvtl00vadct2rc998i.apps.googleusercontent.com"});
+    gapi.auth2.init({client_id: "1019178509762-8v720oc1hgtjiv9j1d4do60smg8v2suf.apps.googleusercontent.com"});
   });
