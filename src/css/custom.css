@@ -1,0 +1,144 @@
+
+.videos img {
+    position: relative;
+}
+.videos img:after {
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+.videos {
+    cursor: pointer;
+}
+	.video-title {
+    background: #f5f5f5;
+    padding: 10px;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+}
+
+.video-title > a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.video-title:hover{
+    background: #f1f1f1;
+}
+.video-title:hover a{
+    color:#333;
+    font-weight: bold;
+}
+.hero-browser-inner.is-revealing {
+    background: #fff;
+    overflow-y: auto;
+    max-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    overflow-x: hidden;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(244,67,54,.4);
+    border-radius: 4px;
+    z-index: 999;
+	padding: 20px;
+}
+.newsletter-form {
+    max-width: 475px;
+    margin: 0px 38%;
+	
+}
+article, aside, footer, header, nav, section {
+ 
+    z-index: 9 !important;
+}
+.msgData ul {padding: 0;}
+
+.msgData li p {
+    margin: 0;
+    text-align: left;
+}
+
+.msgData li {
+    grid-template-columns: auto 1fr;
+    display: grid;
+}
+
+
+.videoData {
+    
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+    float: left;
+   
+}
+
+.msgData {
+    width: 33%;
+    overflow: auto;
+    height: 316px;
+    position: absolute;
+    right: -3.5%;
+    background: #000;
+    float: left;
+}
+
+.msgData ul {
+    display: block;
+}
+
+
+.msg a {
+    float: left;
+	font-size: 10px;
+}
+
+.msg p {
+    float: left;
+    font-size: 12px;
+}
+.newsletter-inner.section-inner {
+    opacity: 1;
+}
+.bottom {
+    height: 150px;
+    width: 100%;
+    float: left;
+}
+button.sendMsg {
+    background: linear-gradient(65deg, #1274ED 0, #4992F0 100%);
+    border: 1px solid #4992F0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    min-height: 38px;
+}
+
+.senddiv {
+    display: grid;
+    grid-template-columns: 195px auto;
+    width: 95%;
+    margin: 0 auto;
+}
+.msgData ul {
+    height: 247px;
+    overflow-y: auto;
+	padding: 10px;
+}
+.msg a, .msg p {
+    color: #fff;
+    text-decoration: none;
+}	
+.msgData ul {
+    height: 238px;
+    overflow-y: auto;
+}
+.msgData ul li a{margin-right:10px;background: #ffd600;border-radius: 4px;margin-bottom: 10px;padding: 0 5px;max-height: 30px; overflow: auto;}
