@@ -142,3 +142,4 @@ button.sendMsg {
     overflow-y: auto;
 }
 .msgData ul li a{margin-right:10px;background: #ffd600;border-radius: 4px;margin-bottom: 10px;padding: 0 5px;max-height: 30px; overflow: auto;}
+.hero-browser-inner.is-revealing{display:none}
