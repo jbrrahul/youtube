@@ -38,7 +38,7 @@ Click Any video to open full details
 Click on live streaming video and use the chatting functionality.
 
 ## Note
-Google is not providing API access to localhost or any IP so to see the proper functionality deplay code on a server with a domain name.
+Google is not providing API access to localhost or any IP so to see the proper functionality deploy code on a server with a domain name.
 Please make sure to update tests as appropriate.
 
 ## License
