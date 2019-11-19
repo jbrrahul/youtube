@@ -30,7 +30,7 @@ jQuery(document).ready(function ($) {
         if (cid && cid != 0) {
             fatchmsg();
         }
-    }, 50000);
+    }, 10000);
     $(document).on('click', '.videos', function () {
         var title = $(this).attr('title');
         var cid = $(this).attr('cid');
@@ -55,7 +55,15 @@ jQuery(document).ready(function ($) {
                     location.reload();
                 }
             });
-    })
+    });
+    $(document).on('click', '.sendMsg', function () {
+
+        var msg = $('.txtMsg').val();
+        $('.txtMsg').val('');
+        var cid = $('.cid').val();
+        executeSent(cid, msg);
+    });
+
 
 });
 
@@ -109,14 +117,6 @@ function execute() {
                 console.error("Execute error", err);
             });
 }
-
-$(document).on('click', '.sendMsg', function () {
-
-    var msg = $('.txtMsg').val();
-    $('.txtMsg').val('');
-    var cid = $('.cid').val();
-    executeSent(cid, msg);
-});
 
 function executeSent(cid, msg) {
     return gapi.client.youtube.liveChatMessages.insert({
