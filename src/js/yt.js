@@ -152,7 +152,7 @@ function rendervideos(videos) {
 
 function loadClient() {
     $.getJSON('config.json', function (json) {
-        gapiL̥.client.setApiKey(json.key); //API Key
+        gapi.client.setApiKey(json.key); //API Key
         return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
             .then(function () {
                     execute();
