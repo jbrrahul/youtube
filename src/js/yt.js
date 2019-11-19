@@ -17,9 +17,8 @@ function executemsg(cid) {
         "part": "id,snippet,authorDetails"
     })
         .then(function (response) {
-                // Handle the results here (response.result has the parsed body).
-                console.log("Response", response);
-            },
+                // on successful
+              },
             function (err) {
                 console.error("Execute error", err);
             });
@@ -49,7 +48,6 @@ jQuery(document).ready(function ($) {
         })
             .done(function (response) {
                 var response = jQuery.parseJSON(response);
-                console.log(response);
                 if (response.status == 'Success') {
                     location.reload();
                 }
@@ -66,9 +64,7 @@ function fatchmsg() {
             "part": "id,snippet,authorDetails"
         })
             .then(function (response) {
-                    console.log("Response", response);
                     var msgData = response.result.items;
-
                     $('.msgData ul').html('<li>-</li>');
                     $.each(msgData, function (l, v) {
                         var msgs = v.snippet.displayMessage;
@@ -95,7 +91,6 @@ function execute() {
         "mine": true
     })
         .then(function (response) {
-                console.log("Response", response);
                 var datajs = response;
                 var videos = datajs.result.items;
                 $.each(videos, function (l, v) {
@@ -134,9 +129,8 @@ function executeSent(cid, msg) {
     })
         .then(function (response) {
                 fatchmsg();
-                // Handle the results here (response.result has the parsed body).
-                console.log("Response", response);
-            },
+                // On successful insert
+                },
             function (err) {
                 console.error("Execute error", err);
             });
@@ -156,7 +150,7 @@ function loadClient() {
         return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
             .then(function () {
                     execute();
-                    console.log("GAPI client loaded for API1231231");
+                    console.log("GAPI client loaded for API);
                     execute();
                 },
                 function (err) {
@@ -180,8 +174,7 @@ function file_get_contents(filename) {
       return data;
     });*/
     $.getJSON(filename, function (json) {
-        console.log(json);
-        return json;
+       return json;
     });
 }
 
