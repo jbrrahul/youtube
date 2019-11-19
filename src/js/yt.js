@@ -25,9 +25,9 @@ function executemsg(cid) {
 }
 
 jQuery(document).ready(function ($) {
-    setInterval(function () {
+    /*setInterval(function () {
         fatchmsg()
-    }, 10000);
+    }, 10000);*/
     $(document).on('click', '.videos', function () {
         var title = $(this).attr('title');
         var cid = $(this).attr('cid');
