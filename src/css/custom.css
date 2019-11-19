@@ -2,22 +2,25 @@
 .videos img {
     position: relative;
 }
+
 .videos img:after {
     position: absolute;
     content: "";
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     z-index: 9999;
 }
+
 .videos {
     cursor: pointer;
 }
-	.video-title {
+
+.video-title {
     background: #f5f5f5;
     padding: 10px;
-    border-bottom-left-radius:4px;
-    border-bottom-right-radius:4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .video-title > a {
@@ -27,13 +30,16 @@
     text-transform: capitalize;
     cursor: pointer;
 }
-.video-title:hover{
+
+.video-title:hover {
     background: #f1f1f1;
 }
-.video-title:hover a{
-    color:#333;
+
+.video-title:hover a {
+    color: #333;
     font-weight: bold;
 }
+
 .hero-browser-inner.is-revealing {
     background: #fff;
     overflow-y: auto;
@@ -42,21 +48,26 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     overflow-x: hidden;
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(244,67,54,.4);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(244, 67, 54, .4);
     border-radius: 4px;
     z-index: 999;
-	padding: 20px;
+    padding: 20px;
 }
+
 .newsletter-form {
     max-width: 475px;
     margin: 0px 38%;
-	
+
 }
+
 article, aside, footer, header, nav, section {
- 
+
     z-index: 9 !important;
 }
-.msgData ul {padding: 0;}
+
+.msgData ul {
+    padding: 0;
+}
 
 .msgData li p {
     margin: 0;
@@ -70,14 +81,14 @@ article, aside, footer, header, nav, section {
 
 
 .videoData {
-    
+
     width: 100%;
 }
 
 .half {
     width: 50%;
     float: left;
-   
+
 }
 
 .msgData {
@@ -97,21 +108,24 @@ article, aside, footer, header, nav, section {
 
 .msg a {
     float: left;
-	font-size: 10px;
+    font-size: 10px;
 }
 
 .msg p {
     float: left;
     font-size: 12px;
 }
+
 .newsletter-inner.section-inner {
     opacity: 1;
 }
+
 .bottom {
     height: 150px;
     width: 100%;
     float: left;
 }
+
 button.sendMsg {
     background: linear-gradient(65deg, #1274ED 0, #4992F0 100%);
     border: 1px solid #4992F0;
@@ -128,21 +142,37 @@ button.sendMsg {
     width: 95%;
     margin: 0 auto;
 }
+
 .msgData ul {
     height: 247px;
     overflow-y: auto;
-	padding: 10px;
+    padding: 10px;
 }
+
 .msg a, .msg p {
     color: #fff;
     text-decoration: none;
-}	
+}
+
 .msgData ul {
     height: 238px;
     overflow-y: auto;
 }
-.msgData ul li a{margin-right:10px;background: #ffd600;border-radius: 4px;margin-bottom: 10px;padding: 0 5px;max-height: 30px; overflow: auto;}
-html.gr__youtube-rahul_herokuapp_com{ scroll-behavior: smooth;}
+
+.msgData ul li a {
+    margin-right: 10px;
+    background: #ffd600;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    max-height: 30px;
+    overflow: auto;
+}
+
+html.gr__youtube-rahul_herokuapp_com {
+    scroll-behavior: smooth;
+}
+
 #changeGoogleCrenditials {
     font-size: 10px;
     padding: 0;
@@ -154,17 +184,19 @@ html.gr__youtube-rahul_herokuapp_com{ scroll-behavior: smooth;}
     padding: 5px;
     background: linear-gradient(65deg, #1777ed 0, #4e95f0 100%);
     line-height: 15px;
-    box-shadow: 0 6px 15px rgba(32,43,54,0.12);
+    box-shadow: 0 6px 15px rgba(32, 43, 54, 0.12);
     cursor: pointer;
 }
+
 #saveCredentials {
     background: linear-gradient(65deg, #1777ed 0, #4e95f0 100%);
-    box-shadow: 0 6px 15px rgba(32,43,54,0.12);
+    box-shadow: 0 6px 15px rgba(32, 43, 54, 0.12);
     border: none;
     padding: 2px 16px;
     line-height: 29px;
     color: #fff;
 }
+
 .description {
     margin-top: 50px;
     line-height: 20px;
@@ -172,10 +204,12 @@ html.gr__youtube-rahul_herokuapp_com{ scroll-behavior: smooth;}
     position: absolute;
     left: 0;
 }
+
 p.samples {
     font-size: 13px;
     font-weight: bold;
 }
+
 a.back-to-videos {
     position: absolute;
     right: 0;
@@ -184,8 +218,15 @@ a.back-to-videos {
     padding: 5px;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 9px 24px 9px rgba(32,43,54,0.12);
+    box-shadow: 9px 24px 9px rgba(32, 43, 54, 0.12);
     font-size: 16px;
     font-weight: bold;
-	text-decoration:none;
+    text-decoration: none;
+}
+
+.hero-browser-inner svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    margin-left: 100%;
 }

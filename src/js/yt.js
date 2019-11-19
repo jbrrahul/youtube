@@ -18,22 +18,25 @@ function executemsg(cid) {
     })
         .then(function (response) {
                 // on successful
-              },
+            },
             function (err) {
                 console.error("Execute error", err);
             });
 }
 
 jQuery(document).ready(function ($) {
-    /*setInterval(function () {
-        fatchmsg()
-    }, 10000);*/
+    setInterval(function () {
+        var cid = $('.cid').val();
+        if (cid && cid != 0) {
+            fatchmsg();
+        }
+    }, 50000);
     $(document).on('click', '.videos', function () {
         var title = $(this).attr('title');
         var cid = $(this).attr('cid');
         var vid = $(this).attr('vid');
         $('.cid').val(cid);
-		window.location.href = '#videoData';
+        window.location.href = '#videoData';
         $('.newsletter-inner.section-inner').css('opacity', 1);
         $('.newsletter-header.text-center.is-revealing h2').text(title);
         $('.newsletter-header.text-center.is-revealing .iframevd').attr('src', 'https://www.youtube.com/embed/' + vid);
@@ -130,7 +133,7 @@ function executeSent(cid, msg) {
         .then(function (response) {
                 fatchmsg();
                 // On successful insert
-                },
+            },
             function (err) {
                 console.error("Execute error", err);
             });
@@ -138,7 +141,7 @@ function executeSent(cid, msg) {
 
 function rendervideos(videos) {
     $.each(videos, function (v) {
-        $('.hero-browser-inner.is-revealing').css('display','block');
+        $('.hero-browser-inner.is-revealing').css('display', 'block');
         $('.hero-browser-inner.is-revealing').append('<div class="videos"><img src="' + v.snippet.thumbnails.medium.url + '"><a target="_blank" href="https://www.youtube.com/watch?v=' + v.id + '"><h1>' + (v.snippet.title) + '</h1></a></div>')
     });
 
@@ -174,7 +177,7 @@ function file_get_contents(filename) {
       return data;
     });*/
     $.getJSON(filename, function (json) {
-       return json;
+        return json;
     });
 }
 
