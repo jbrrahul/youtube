@@ -142,7 +142,7 @@ button.sendMsg {
     overflow-y: auto;
 }
 .msgData ul li a{margin-right:10px;background: #ffd600;border-radius: 4px;margin-bottom: 10px;padding: 0 5px;max-height: 30px; overflow: auto;}
-
+html.gr__youtube-rahul_herokuapp_com{ scroll-behavior: smooth;}
 #changeGoogleCrenditials {
     font-size: 10px;
     padding: 0;
@@ -175,4 +175,17 @@ button.sendMsg {
 p.samples {
     font-size: 13px;
     font-weight: bold;
+}
+a.back-to-videos {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    background: rgb(177, 241, 234);
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 9px 24px 9px rgba(32,43,54,0.12);
+    font-size: 16px;
+    font-weight: bold;
+	text-decoration:none;
 }
