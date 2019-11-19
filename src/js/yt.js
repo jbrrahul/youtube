@@ -36,6 +36,7 @@ jQuery(document).ready(function ($) {
         var cid = $(this).attr('cid');
         var vid = $(this).attr('vid');
         $('.cid').val(cid);
+        $('.msgData ul').html('');
         window.location.href = '#videoData';
         $('.newsletter-inner.section-inner').css('opacity', 1);
         $('.newsletter-header.text-center.is-revealing h2').text(title);
