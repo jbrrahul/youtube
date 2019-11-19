@@ -150,7 +150,7 @@ function loadClient() {
         return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
             .then(function () {
                     execute();
-                    console.log("GAPI client loaded for API);
+                    console.log("GAPI client loaded for API");
                     execute();
                 },
                 function (err) {
