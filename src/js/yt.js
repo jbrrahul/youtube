@@ -144,7 +144,7 @@ function executeSent(cid, msg) {
 
 function rendervideos(videos) {
     $.each(videos, function (v) {
-        $('.hero-browser-inner.is-revealing').show();
+        $('.hero-browser-inner.is-revealing').css('display','block');
         $('.hero-browser-inner.is-revealing').append('<div class="videos"><img src="' + v.snippet.thumbnails.medium.url + '"><a target="_blank" href="https://www.youtube.com/watch?v=' + v.id + '"><h1>' + (v.snippet.title) + '</h1></a></div>')
     });
 

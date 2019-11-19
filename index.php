@@ -15,41 +15,12 @@ if (file_exists('config.json')) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>YouTube Broadcasting Application</title>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="src/js/custom.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
         <link rel="stylesheet" href="src/css/style.css">
         <link rel="stylesheet" href="src/css/custom.css">
-        <script>
-            jQuery(document).ready(function ($) {
-                $('#saveCredentials').click(function () {
-                    if (!$('.appkey').val() || !$('.appid').val()) {
-                        alert('Please add AppID and AppKey values.');
-                        return false;
-                    }
-                    var key = $('.appkey').val();
-                    var appid = $('.appid').val();
-                    $('.response-div').html('<i>SENDING...<i>');
-                    $.ajax({
-                        method: "POST",
-                        url: "controller.php",
-                        data: {type: 'create', key: key, appid: appid}
-                    })
-                        .done(function (response) {
-                            var response = jQuery.parseJSON(response);
-                            if (response.status == 'Success') {
-                                $('.response-div').html('<i>Saved...<i>');
-                                location.reload();
-                            } else {
-                                $('.response-div').html('<p>Error:' + response.message + '</p>');
-                            }
-
-                        });
-                })
-
-            })
-
-        </script>
-    <body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
+        <body class="is-boxed has-animations">
+		<div class="body-wrap boxed-container">
         <main>
             <section class="hero text-center">
                 <div class="container-sm">
@@ -67,6 +38,8 @@ if (file_exists('config.json')) {
                                     generate App credentials.</p>
                                 <p>Add current domain name in Authorized origins and Website restrictions to integrate
                                     domain with Google.</p>
+    							<p class="samples">Sample Key: AIzaSyCShoduqS-n2khomesmAwIyv2mHhTE0NHw</p>
+								<p class="samples">Sample ClientID: 1019178509762-lvrv63kou937okpvtl00vadct2rc998i.apps.googleusercontent.com</p>
                             </div>
                         </div>
                     </div>
