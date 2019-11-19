@@ -96,6 +96,7 @@ function execute() {
         .then(function (response) {
                 var datajs = response;
                 var videos = datajs.result.items;
+                $('.hero-browser-inner.is-revealing').html('');
                 $.each(videos, function (l, v) {
                     if (v.snippet.thumbnails.medium.url) {
                         var liveChatId = v.snippet.liveChatId ? v.snippet.liveChatId : 0;
